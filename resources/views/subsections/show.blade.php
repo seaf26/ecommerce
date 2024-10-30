@@ -11,9 +11,9 @@
             <p class="card-text">فئة المنتج: {{ $subsection->section->name }}</p>
             <p class="card-text">تاريخ الانشاء: {{ $subsection->created_at }}</p>
             <p class="card-text">تاريخ التعديل: {{ $subsection->updated_at }}</p>
-            <p class="card-text" style="color: {{ $subsection->status ? 'green' : 'red' }};">
+            {{-- <p class="card-text" style="color: {{ $subsection->status ? 'green' : 'red' }};">
                 المتوفر: {{ $subsection->status ? 'متوفر' : 'غير متوفر' }}
-            </p>
+            </p> --}}
             <a href="{{ route('subsections.index') }}" class="btn btn-primary">العودة إلى القائمة</a>
         </div>
     </div>

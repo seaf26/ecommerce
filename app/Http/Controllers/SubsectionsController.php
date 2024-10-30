@@ -51,11 +51,13 @@ class SubsectionsController extends Controller
 
     public function edit(Subsection $subsection)
     {
-        return view('subsections.edit', compact('subsection'));
+        $sections = Section::all();
+        return view('subsections.edit', compact('subsection', 'sections'));
     }
 
     public function update(Request $request, Subsection $subsection)
     {
+        $sections = Section::all();
         $request->validate([
             'name' => 'required',
             'img' => 'required',

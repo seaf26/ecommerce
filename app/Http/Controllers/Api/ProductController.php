@@ -20,10 +20,10 @@ class ProductController extends Controller
                 'id' => $product->id,
                 'name' => $product->name,
                 'price' => $product->price,
-                // 'section_id' => $product->section_id,
+                'section_id' => $product->section_id,
                 // 'subsection_id' => $product->subsection_id,
                 // 'section' => $product->section,
-                // 'subsection' => $product->subsection
+                'subsection' => $product->subsection
             ];
         }
 

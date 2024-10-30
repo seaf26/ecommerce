@@ -17,7 +17,7 @@ class SectionController extends Controller
             $dataSections[] = [
                 'id' => $section->id,
                 'name' => $section->name,
-                // 'subsections' => $section->subsections
+                'subsections' => $section->subsections
             ];
         }
 
